@@ -3,7 +3,7 @@
 Hapi = require('hapi')
 
 #server = new Hapi.Server()
-server = new Hapi.Server(app: require('../config'), cache: require('./cache'), load:sampleInterval:1000)
+server = new Hapi.Server(app: require('../config'))
 
 # server.connection port: 3000, host: 'localhost'
 server.connection
