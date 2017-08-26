@@ -1,0 +1,17 @@
+{
+  "development": {
+    "firebase": "https://development-d16a.firebaseio.com/",
+    "storage": "../db/db.sqlite3",
+    "dialect": "sqlite"
+  },
+  "test": {
+    "firebase": "https://development-d16a.firebaseio.com/test/",
+    "storage": "../db/db.sqlite3",
+    "dialect": "sqlite"
+  },
+  "production": {
+    "firebase": "https://darkoverlordofdata.firebaseio.com/",
+    "storage": "../db/db.sqlite3",
+    "dialect": "sqlite"
+  }
+}

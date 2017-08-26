@@ -2,15 +2,8 @@
 
 Hapi = require('hapi')
 
-#server = new Hapi.Server()
-server = new Hapi.Server(app: require('../config'), cache: require('./cache'), load:sampleInterval:1000)
-
-# server.connection port: 3000, host: 'localhost'
-server.connection
-  port: server.settings.app.port
-  host: server.settings.app.host
-  routes: cors: server.settings.app.cors
-
+server = new Hapi.Server()
+server.connection port: 3000, host: 'localhost'
 
 server.route
     method: 'GET',
