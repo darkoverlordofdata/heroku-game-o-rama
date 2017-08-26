@@ -51,7 +51,7 @@ module.exports =
   #| custom cacheing
   #|
   #|
-  # './cache/memjs': {}
+  './cache/memjs': {}
 
   #|--------------------------------------------------------------------------
   #| db/firebase

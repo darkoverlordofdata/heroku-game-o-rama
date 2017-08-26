@@ -10,11 +10,10 @@
 #
 #
 #
-memcached = if process.env.memcachedcloud_aaaeb? then JSON.parse(process.env.memcachedcloud_aaaeb)
-if memcached?
-  memcached = memcached.username+':'+memcached.password+'@'+memcached.servers
+memcached = if process.env.MEMCACHEDCLOUD_SERVERS? 
+  process.env.MEMCACHEDCLOUD_USERNAME+':'+process.env.MEMCACHEDCLOUD_PASSWORD+'@'+process.env.MEMCACHEDCLOUD_SERVERS
 else
-  memcached = 'localhost:11211'
+  'localhost:11211'
 
 module.exports = [
   {

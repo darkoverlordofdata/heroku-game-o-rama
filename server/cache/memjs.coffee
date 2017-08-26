@@ -13,11 +13,8 @@
 exports.register = (server, options, next) ->
 
   memjs = require('memjs')
-  cache = memjs.Client.create(process.env.MEMCACHEDCLOUD_SERVERS, {
-    username: process.env.MEMCACHEDCLOUD_USERNAME,
-    password: process.env.MEMCACHEDCLOUD_PASSWORD
-  })
-
+  cache = memjs.Client.create()
+  
   server.method
     name: 'cache.get'
     method: (key, next) -> cache.get(key, next)
