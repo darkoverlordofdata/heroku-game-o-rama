@@ -80,7 +80,7 @@ module.exports =
   #| so that cookies will work in hapi.
   #|
   #|
-  host: if process.env.NODE_ENV then 'game-o-rama.herokuapp.com' else 'localhost'
+  host: if process.env.NODE_ENV then '0.0.0.0' else 'localhost'
   # host: process.env.OPENSHIFT_NODEJS_IP ? 'bosco.com'
 
 
