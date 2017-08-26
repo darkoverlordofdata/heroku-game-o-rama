@@ -37,7 +37,7 @@ module.exports =
   #|
   yar:
     cookieOptions:
-      password: process.env.OPENSHIFT_SECRET_TOKEN ? 'iVY0kAZ1iSBWT48dG7y5dzBq2BZYUmG2'
+      password: 'iVY0kAZ1iSBWT48dG7y5dzBq2BZYUmG2'
       isSecure: process.env.NODE_ENV is 'production'
       clearInvalid: true
 
@@ -51,7 +51,7 @@ module.exports =
   #| custom cacheing
   #|
   #|
-  './cache/memjs': {}
+  # './cache/memjs': {}
 
   #|--------------------------------------------------------------------------
   #| db/firebase
