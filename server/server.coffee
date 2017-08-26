@@ -13,7 +13,6 @@
 #
 Hapi = require('hapi')
 module.exports = server = new Hapi.Server(app: require('../config'), cache: require('./cache'), load:sampleInterval:1000)
-# module.exports = server = new Hapi.Server(app: require('../config'), load:sampleInterval:1000)
 
 #
 # Set host and port
