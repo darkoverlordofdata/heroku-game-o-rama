@@ -8,8 +8,8 @@ server = new Hapi.Server(app: require('../config'))
 # server.connection port: 3000, host: 'localhost'
 server.connection
   port: server.settings.app.port
-  host: server.settings.app.host
-  routes: cors: server.settings.app.cors
+#   host: server.settings.app.host
+#   routes: cors: server.settings.app.cors
 
 
 server.route
