@@ -60,7 +60,7 @@ module.exports =
   #| database connection to fiebase
   #|
   #|
-  # './db': {}
+  './db': {}
 
   #|--------------------------------------------------------------------------
   #| errors
@@ -93,7 +93,7 @@ module.exports =
   #|
   #| Dispatch to run a katra
   #|
-  # '../application/katra': {}
+  '../application/katra': {}
 
   #|--------------------------------------------------------------------------
   #| games
@@ -101,7 +101,7 @@ module.exports =
   #|
   #| Dispatch html5 game
   #|
-  # '../application/games': {}
+  '../application/games': {}
 
   #|--------------------------------------------------------------------------
   #| leaderboard

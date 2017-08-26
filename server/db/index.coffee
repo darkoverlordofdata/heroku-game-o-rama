@@ -7,15 +7,12 @@
 ##
 # 
 
-console.log 'check FIREBASE_AUTH'
 unless process.env.FIREBASE_AUTH?
   process.exit(console.log('Environment FIREBASE_AUTH not set'))
 
 #
 #
 exports.register = (server, options, next) ->
-
-  console.log("registering db 1")
 
   EXPIRES = 1 # no expiration
 
@@ -24,9 +21,7 @@ exports.register = (server, options, next) ->
   migrations = path.resolve(models, './migrations')
 
   orm = require('ormfire')(models, process.env.FIREBASE_AUTH)
-  console.log("registering db 2")
   orm.init (queryInterface, Sequelize) ->
-    console.log("registering db 3")
     sequelize = queryInterface.sequelize
 
     ###
