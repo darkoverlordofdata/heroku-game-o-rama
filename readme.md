@@ -4,7 +4,7 @@ A cms/portal to display my static gh-pages on Facebook
 
 Moved backend from openshift to heroku
 
-Dependencies:
+Components:
 
 * Coffeescript (stable)
 * Hapi (latest)
