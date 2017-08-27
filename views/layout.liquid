@@ -34,14 +34,16 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-{% assign top_href = topHref %}
-{% assign top_button = topButton %}
 <body>
 
 <div class="container">
   <div class="well beta">
     <img src="/img/welcome.png" class="logo img-responsive img-rounded" alt="darkoverlord & bosco's game-o-rama">
-    <a class="pull-right btn btn-info" href="{{ top_href }}" role="button">{{ top_button }}</a>
+    {% if topHref %}
+    <a class="pull-right btn btn-info" href="{{ topHref }}" role="button">{{ topButton }}</a>
+    {% else %}
+    <a class="pull-right btn btn-info" href="/" role="button">Home</a>
+    {% endif %}
   </div>
 
   <!-- Marketing messaging and featurettes
@@ -53,7 +55,6 @@
     {% block content %}
     {% endblock %}
     <footer>
-      <p><a class="pull-left" href="#">Back to top</a> &nbsp;</p>
       <p class="text-center">&copy; 2015 - 2017 <a href="//www.darkoverlordofdata.com">Dark Overlord of Data</a>
       <br />&middot; Always use Dark Overlord of Data brand data in your devices that use data &middot; </p>
       <p>
