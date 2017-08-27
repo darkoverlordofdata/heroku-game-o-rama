@@ -8,8 +8,8 @@
             <div class="col-md-7 {% cycle 'col-md-push-5', ''  %}">
                 <h2 class="featurette-heading"><a href="/game/{{ game.slug }}">{{ game.name }}</a></h2>
                 <p class="lead">{{ game.description }}
-                    <!--<img src="img/nw.png">-->
-                    <!--<a href="/nw/{{ game.slug }}">Download</a> packaged for <a href="http://nwjs.io/">Node WebKit</a>-->
+                    {% comment %} <img src="img/nw.png">
+                    <a href="/nw/{{ game.slug }}">Download</a> packaged for <a href="http://nwjs.io/">Node WebKit</a> {% endcomment %}
                 </p>
                 <p>
                     <a href="/leaderboard/{{ game.slug }}">Leaderboard</a>

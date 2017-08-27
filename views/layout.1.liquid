@@ -34,8 +34,8 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-{% assign top_href = topHref %}
-{% assign top_button = topButton %}
+{% assign top_href = '/' %}{% if topHref %}{% assign top_href = topHref %}{% endif %}
+{% assign top_button = 'Home' %}{% if topButton %}{% assign top_button = topButton %}{% endif %}
 <body>
 
 <div class="container">
