@@ -19,9 +19,6 @@ exports.register = (server, options, next) ->
       config:
         id: 'index'
         handler: (request, reply) ->
-          # reply.view 'index',
-          #   topHref: '/about'
-          #   topButton: 'About'
           server.methods.db.findAll 'Katra', (err, katras) ->
             server.methods.db.findAll 'Game', (err, games) ->
               reply.view 'index',
