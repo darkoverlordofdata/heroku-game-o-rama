@@ -21,6 +21,7 @@ exports.register = (server, options, next) ->
         handler: (request, reply) ->
           server.methods.db.findAll 'Katra', (err, katras) ->
             server.methods.db.findAll 'Game', (err, games) ->
+              games.reverse()
               reply.view 'index',
                 topHref: '/about'
                 topButton: 'About'
